@@ -1,0 +1,13 @@
+# 비밀/상태/런타임 파일
+.env
+.lock
+.succeeded
+.error_notified
+keys/
+logs/
+
+# terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/crash.log
