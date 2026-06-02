@@ -1,13 +1,15 @@
-# 비밀/상태/런타임 파일
+# 비밀/계정/런타임 파일
 .env
-.lock
-.succeeded
-.error_notified
+.lock*
+.succeeded*
+.error_notified*
 keys/
 logs/
 
-# terraform
-terraform/.terraform/
-terraform/terraform.tfstate
-terraform/terraform.tfstate.backup
-terraform/crash.log
+# terraform (상태/플러그인). lock 파일(.terraform.lock.hcl)은 커밋함
+**/.terraform/
+**/terraform.tfstate
+**/terraform.tfstate.backup
+**/terraform.tfstate.*.backup
+**/terraform.tfstate.d/
+crash.log
